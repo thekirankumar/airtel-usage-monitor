@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Airtel Usage Monitor' target in the 'Airtel Usage Monitor' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
