@@ -7,4 +7,4 @@ This open source project's aim is to create a beautiful Mac app which automatica
 ![Airtel Usage Monitor Screenshot](http://www.thekirankumar.com/blog/wp-content/uploads/2013/12/usage_monitor_preview22.jpg)
 
 
-<a href="http://www.thekirankumar.com/blog/wp-content/plugins/download-monitor/download.php?id=Airtel-Usage-Monitor.zip">Download the app</a>
+<a href="http://www.thekirankumar.com/blog/2013/12/26/airtel-broadband-usage-monitor-mac/">More details about the app</a>
