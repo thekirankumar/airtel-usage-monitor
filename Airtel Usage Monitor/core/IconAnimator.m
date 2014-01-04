@@ -45,7 +45,7 @@
     {
         [self stopAnimation];
     }
-    timer = [NSTimer scheduledTimerWithTimeInterval:0.2 target:self selector:@selector(animate) userInfo:nil repeats:YES];
+    timer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(animate) userInfo:nil repeats:YES];
 
 }
 
@@ -64,6 +64,11 @@
 {
     NSImage * image = [self convertPercentageToImage:perc];
     [statusItem setImage:image];
+}
+
+-(void) setError
+{
+    [statusItem setImage:[NSImage imageNamed:@"error"]];
 }
 
 -(NSImage *)convertPercentageToImage:(int)perc

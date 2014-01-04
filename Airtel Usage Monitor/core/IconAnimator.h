@@ -15,4 +15,5 @@
 -(void) startAnimation;
 -(void) stopAnimation;
 -(void) setPercentage:(int)perc;
+-(void) setError;
 @end

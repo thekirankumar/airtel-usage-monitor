@@ -16,32 +16,34 @@
 {
     IconAnimator * animator;
     NSMenuItem * refreshItem;
-
     NSMenuItem * percentageItem;
     NSMenuItem * usageBandwidthItem;
-
     NSMenuItem * remainingBandwidthItem;
-
     NSMenuItem * totalBandwidthItem;
-
     NSMenuItem * daysRemainingItem;
     NSMenuItem * dslNumberItem;
     NSMenuItem * exitItem;
     NSMenuItem * aboutItem;
     NSMenuItem * errorItem;
+    NSMenuItem * nextFetchItem;
+    int timeGap;
+    NSTimer * fetchTimer;
+    NSTimer * errorTimer;
 }
 @synthesize  statusItem;
 
 NSString *const SERVER_URL = @"http://122.160.230.125:8080/gbod/gb_on_demand.do";
+const int GAP_BETWEEN_FETCHES = 3600; //seconds between each fetch calls
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     [self initialize];
-    [self checkReachability];
+    [self startWithDelay];
 }
 
 -(void)initialize
 {
+    [self resetTimeGap];
     LaunchAtLoginController *launchController = [[LaunchAtLoginController alloc] init];
     [launchController setLaunchAtLogin:YES];
     
@@ -90,6 +92,9 @@ NSString *const SERVER_URL = @"http://122.160.230.125:8080/gbod/gb_on_demand.do"
     dslNumberItem = [[NSMenuItem alloc] initWithTitle:@"" action:@selector(menuItemClick:) keyEquivalent:@""];
     [dslNumberItem setEnabled:NO];
     
+    nextFetchItem = [[NSMenuItem alloc] initWithTitle:@"" action:@selector(menuItemClick:) keyEquivalent:@""];
+    [nextFetchItem setEnabled:NO];
+    
     
     [self.statusItem setMenu:menu];
     
@@ -112,12 +117,14 @@ NSString *const SERVER_URL = @"http://122.160.230.125:8080/gbod/gb_on_demand.do"
     [errorItem setTitle:error];
     [self.statusItem.menu addItem:errorItem];
     [self createCommonEndMenu];
+    [animator setError];
 }
 
 -(void)menuItemClick:(NSMenuItem *)item
 {
     if(item.tag == 1)
     {
+        [self resetTimeGap];
         [self startWithDelay];
     }
     else if(item.tag == 0)
@@ -126,12 +133,13 @@ NSString *const SERVER_URL = @"http://122.160.230.125:8080/gbod/gb_on_demand.do"
     }
     else if(item.tag == 2)
     {
-        NSURL *url = [NSURL URLWithString:@"http://thekirankumar.com/?ref=airtelusagemonitor"];
+        NSURL *url = [NSURL URLWithString:@"thekirankumar.github.io/airtel-usage-monitor/"];
         if( ![[NSWorkspace sharedWorkspace] openURL:url] )
             NSLog(@"Failed to open url: %@",[url description]);
     }
 }
 
+/** Begins the network http call to the server **/
 -(void) start
 {
     NSURL *url = [NSURL URLWithString:SERVER_URL];
@@ -141,16 +149,18 @@ NSString *const SERVER_URL = @"http://122.160.230.125:8080/gbod/gb_on_demand.do"
     
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         [self parse:operation.responseString];
-        
+        [self resetTimeGap];
+        [self performSelectorOnMainThread:@selector(onFetchSuccess) withObject:nil waitUntilDone:NO];
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error){
-        [self reportError:@"Error : This app only works on Airtel Broadband."];
+        [self performSelectorOnMainThread:@selector(onNetworkError) withObject:nil waitUntilDone:NO];
         
     }];
     
     [operation start];
 }
 
+/** Performs the actual parsing of the HTML returned by Airtel and populates UI **/
 -(void) parse:(NSString *)response
 {
     NSError * error;
@@ -198,7 +208,6 @@ NSString *const SERVER_URL = @"http://122.160.230.125:8080/gbod/gb_on_demand.do"
 
             [dslNumberItem setTitle:[dslNumberNode contents]];
             [self.statusItem.menu addItem:dslNumberItem];
-         airt
             
             NSString * usageString = [NSString stringWithFormat:@"Usage : %0.2f GB", usedFloat];
             [usageBandwidthItem setTitle:usageString];
@@ -215,6 +224,17 @@ NSString *const SERVER_URL = @"http://122.160.230.125:8080/gbod/gb_on_demand.do"
             [daysRemainingItem setTitle:[daysLeftNode contents]];
             [self.statusItem.menu addItem:daysRemainingItem];
             
+            [self.statusItem.menu addItem:[NSMenuItem separatorItem]];
+            
+            NSDate * nextFetch = [NSDate dateWithTimeIntervalSinceNow:GAP_BETWEEN_FETCHES];
+            NSDateFormatter * formatter = [[NSDateFormatter alloc] init];
+            [formatter setDateFormat:@"h:mm a"];
+            
+            NSString * nextFetchString = [formatter stringFromDate:nextFetch];
+            NSString * currentTimeString = [formatter stringFromDate:[NSDate date]];
+            [nextFetchItem setTitle:[NSString stringWithFormat:@"Updated at %@, next update at %@.",currentTimeString,nextFetchString]];
+            [self.statusItem.menu addItem:nextFetchItem];
+            
             [self createCommonEndMenu];
             
             
@@ -228,6 +248,7 @@ NSString *const SERVER_URL = @"http://122.160.230.125:8080/gbod/gb_on_demand.do"
 
 }
 
+/** Parse the string to return the data used in GB/MB/TB **/
 -(NSString *) getUsage:(NSString *)fullString
 {
     NSRange searchedRange = NSMakeRange(0, [fullString length]);
@@ -242,35 +263,82 @@ NSString *const SERVER_URL = @"http://122.160.230.125:8080/gbod/gb_on_demand.do"
                                   
 }
 
+/** starts the loading animation and then starts the request after some time **/
+/** starting point **/
 -(void) startWithDelay
 {
     [animator startAnimation];
-    [self performSelector:@selector(start) withObject:nil afterDelay:1.0];
+    [self performSelector:@selector(checkReachability) withObject:nil afterDelay:1.0];
 }
 
+/** call this if you dont want any delay in the request **/
+/** this will check the reachability and decide whether to perform server check or to wait **/
 - (void)checkReachability {
-    Reachability* reach = [Reachability reachabilityForInternetConnection];
+    Reachability* reach = [Reachability reachabilityWithHostname:@"google.com"];
     reach.reachableBlock = ^(Reachability*reach)
     {
         NSLog(@"Network reachable!");
-        [self performSelectorOnMainThread:@selector(startWithDelay) withObject:nil waitUntilDone:NO];
+        [self performSelectorOnMainThread:@selector(start) withObject:nil waitUntilDone:NO];
     };
     
     reach.unreachableBlock = ^(Reachability*reach)
     {
         NSLog(@"Network unreachable!");
-        [animator stopAnimation];
+        [self performSelectorOnMainThread:@selector(onNetworkError) withObject:nil waitUntilDone:NO];
+        
     };
     if([reach isReachable])
     {
-        [self performSelectorOnMainThread:@selector(startWithDelay) withObject:nil waitUntilDone:NO];
+        [self performSelectorOnMainThread:@selector(start) withObject:nil waitUntilDone:NO];
 
+    }
+    else
+    {
+        [self performSelectorOnMainThread:@selector(onNetworkError) withObject:nil waitUntilDone:NO];
     }
     
     [reach startNotifier];
     
 }
 
+-(void) resetTimeGap
+{
+    timeGap = 5;
+    if(errorTimer!=nil)
+    {
+        [errorTimer invalidate];
+        errorTimer = nil;
+    }
+}
+
+/** reschedules check timer whenever network error happens. Performs exponential backoff from 5 to 300 seconds **/
+-(void) onNetworkError
+{
+    NSLog(@"network error, retry scheduled");
+    timeGap = MIN(300,timeGap);
+    if(errorTimer!=nil)
+    {
+        [errorTimer invalidate];
+        errorTimer = nil;
+    }
+    [self reportError:[NSString stringWithFormat:@"Please check your Airtel broadband connection. Retrying in %d seconds.",timeGap]];
+    errorTimer = [NSTimer scheduledTimerWithTimeInterval:timeGap target:self selector:@selector(start) userInfo:nil repeats:NO];
+    timeGap *= 2;
+
+}
+
+-(void) onFetchSuccess
+{
+    NSLog(@"fetch success, scheduling next refresh");
+    if(fetchTimer!=nil)
+    {
+        [fetchTimer invalidate];
+        fetchTimer = nil;
+    }
+    fetchTimer = [NSTimer scheduledTimerWithTimeInterval:GAP_BETWEEN_FETCHES target:self selector:@selector(startWithDelay) userInfo:nil repeats:NO];
+}
+
+/** creates the common menu items in the bottom , like about and exit buttons **/
 
 -(void)createCommonEndMenu
 {
@@ -278,6 +346,8 @@ NSString *const SERVER_URL = @"http://122.160.230.125:8080/gbod/gb_on_demand.do"
     [self.statusItem.menu addItem:aboutItem];
     [self.statusItem.menu addItem:exitItem];
 }
+
+/** creates the common menu items in the top , like Refresh button **/
 -(void)createCommonStartMenu
 {
     [self.statusItem.menu addItem:refreshItem];
