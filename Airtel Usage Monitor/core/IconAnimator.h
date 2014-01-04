@@ -10,4 +10,9 @@
 
 @interface IconAnimator : NSObject
 
+
+- (id)initWithStatusItem:(NSStatusItem *) item;
+-(void) startAnimation;
+-(void) stopAnimation;
+-(void) setPercentage:(int)perc;
 @end

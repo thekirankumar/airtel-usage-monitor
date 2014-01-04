@@ -17,6 +17,47 @@
 		CB17A86C1867390600C205D1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB17A84C1867390600C205D1 /* Cocoa.framework */; };
 		CB17A8741867390600C205D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB17A8721867390600C205D1 /* InfoPlist.strings */; };
 		CB17A8771867390600C205D1 /* Airtel_Usage_MonitorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB17A8761867390600C205D1 /* Airtel_Usage_MonitorTests.m */; };
+		CB17A88118673FBF00C205D1 /* bandwidth.png in Resources */ = {isa = PBXBuildFile; fileRef = CB17A88018673FBF00C205D1 /* bandwidth.png */; };
+		CB17A8881867513400C205D1 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CB17A8851867513400C205D1 /* HTMLNode.m */; };
+		CB17A8891867513400C205D1 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CB17A8871867513400C205D1 /* HTMLParser.m */; };
+		CB17A8A91867560B00C205D1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB17A8A81867560B00C205D1 /* Security.framework */; };
+		CB17A8AB1867561300C205D1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB17A8AA1867561300C205D1 /* SystemConfiguration.framework */; };
+		CB17A8AD1867561900C205D1 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB17A8AC1867561900C205D1 /* CoreServices.framework */; };
+		CB17A8C21867588900C205D1 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CB17A8B01867588900C205D1 /* AFHTTPClient.m */; };
+		CB17A8C31867588900C205D1 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CB17A8B21867588900C205D1 /* AFHTTPRequestOperation.m */; };
+		CB17A8C41867588900C205D1 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CB17A8B41867588900C205D1 /* AFImageRequestOperation.m */; };
+		CB17A8C51867588900C205D1 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CB17A8B61867588900C205D1 /* AFJSONRequestOperation.m */; };
+		CB17A8C61867588900C205D1 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB17A8B81867588900C205D1 /* AFNetworkActivityIndicatorManager.m */; };
+		CB17A8C71867588900C205D1 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CB17A8BB1867588900C205D1 /* AFPropertyListRequestOperation.m */; };
+		CB17A8C81867588900C205D1 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CB17A8BD1867588900C205D1 /* AFURLConnectionOperation.m */; };
+		CB17A8C91867588900C205D1 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CB17A8BF1867588900C205D1 /* AFXMLRequestOperation.m */; };
+		CB17A8CA1867588900C205D1 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = CB17A8C11867588900C205D1 /* UIImageView+AFNetworking.m */; };
+		CB17A8CE18675B5200C205D1 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CB17A8CD18675B5200C205D1 /* libxml2.dylib */; };
+		CB17A8CF18675C3700C205D1 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CB17A8871867513400C205D1 /* HTMLParser.m */; };
+		CB17A8D018675C3900C205D1 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CB17A8851867513400C205D1 /* HTMLNode.m */; };
+		CB17A8D41867626D00C205D1 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CB17A8D31867626D00C205D1 /* Reachability.m */; };
+		CB17A8D51867626D00C205D1 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CB17A8D31867626D00C205D1 /* Reachability.m */; };
+		CB9930D0186B385200AF5790 /* airtel.png in Resources */ = {isa = PBXBuildFile; fileRef = CB9930CE186B385200AF5790 /* airtel.png */; };
+		CB9930D1186B385200AF5790 /* airtel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB9930CF186B385200AF5790 /* airtel@2x.png */; };
+		CB9930FA186B4A3800AF5790 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = CB9930F0186B4A3800AF5790 /* 0.png */; };
+		CB9930FB186B4A3800AF5790 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = CB9930F1186B4A3800AF5790 /* 1.png */; };
+		CB9930FC186B4A3800AF5790 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = CB9930F2186B4A3800AF5790 /* 2.png */; };
+		CB9930FD186B4A3800AF5790 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = CB9930F3186B4A3800AF5790 /* 3.png */; };
+		CB9930FE186B4A3800AF5790 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = CB9930F4186B4A3800AF5790 /* 4.png */; };
+		CB9930FF186B4A3800AF5790 /* 0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB9930F5186B4A3800AF5790 /* 0@2x.png */; };
+		CB993100186B4A3800AF5790 /* 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB9930F6186B4A3800AF5790 /* 1@2x.png */; };
+		CB993101186B4A3800AF5790 /* 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB9930F7186B4A3800AF5790 /* 2@2x.png */; };
+		CB993102186B4A3800AF5790 /* 3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB9930F8186B4A3800AF5790 /* 3@2x.png */; };
+		CB993103186B4A3800AF5790 /* 4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB9930F9186B4A3800AF5790 /* 4@2x.png */; };
+		CB993106186B4C2800AF5790 /* IconAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = CB993105186B4C2800AF5790 /* IconAnimator.m */; };
+		CB993108186B622700AF5790 /* airtel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB993107186B622700AF5790 /* airtel@2x.png */; };
+		CB99310A186B624900AF5790 /* airtel.png in Resources */ = {isa = PBXBuildFile; fileRef = CB993109186B624900AF5790 /* airtel.png */; };
+		CB99310C186B668900AF5790 /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = CB99310B186B668900AF5790 /* refresh.png */; };
+		CB99310F186B671700AF5790 /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = CB99310D186B671600AF5790 /* about.png */; };
+		CB993110186B671700AF5790 /* exit.png in Resources */ = {isa = PBXBuildFile; fileRef = CB99310E186B671600AF5790 /* exit.png */; };
+		CB993115186B697B00AF5790 /* LaunchAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB993113186B697B00AF5790 /* LaunchAtLoginController.m */; };
+		CB993116186B697B00AF5790 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CB993114186B697B00AF5790 /* README.md */; };
+		CB993117186B697F00AF5790 /* LaunchAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB993113186B697B00AF5790 /* LaunchAtLoginController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +90,59 @@
 		CB17A8731867390600C205D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CB17A8751867390600C205D1 /* Airtel_Usage_MonitorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Airtel_Usage_MonitorTests.h; sourceTree = "<group>"; };
 		CB17A8761867390600C205D1 /* Airtel_Usage_MonitorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Airtel_Usage_MonitorTests.m; sourceTree = "<group>"; };
+		CB17A88018673FBF00C205D1 /* bandwidth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bandwidth.png; sourceTree = "<group>"; };
+		CB17A8841867513400C205D1 /* HTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLNode.h; sourceTree = "<group>"; };
+		CB17A8851867513400C205D1 /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLNode.m; sourceTree = "<group>"; };
+		CB17A8861867513400C205D1 /* HTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLParser.h; sourceTree = "<group>"; };
+		CB17A8871867513400C205D1 /* HTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLParser.m; sourceTree = "<group>"; };
+		CB17A8A81867560B00C205D1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CB17A8AA1867561300C205D1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CB17A8AC1867561900C205D1 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		CB17A8AF1867588900C205D1 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		CB17A8B01867588900C205D1 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		CB17A8B11867588900C205D1 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		CB17A8B21867588900C205D1 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		CB17A8B31867588900C205D1 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		CB17A8B41867588900C205D1 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		CB17A8B51867588900C205D1 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		CB17A8B61867588900C205D1 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		CB17A8B71867588900C205D1 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		CB17A8B81867588900C205D1 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		CB17A8B91867588900C205D1 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		CB17A8BA1867588900C205D1 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		CB17A8BB1867588900C205D1 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		CB17A8BC1867588900C205D1 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		CB17A8BD1867588900C205D1 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		CB17A8BE1867588900C205D1 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		CB17A8BF1867588900C205D1 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		CB17A8C01867588900C205D1 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		CB17A8C11867588900C205D1 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		CB17A8CB18675B4600C205D1 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		CB17A8CD18675B5200C205D1 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		CB17A8D21867626D00C205D1 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		CB17A8D31867626D00C205D1 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		CB9930CE186B385200AF5790 /* airtel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = airtel.png; sourceTree = "<group>"; };
+		CB9930CF186B385200AF5790 /* airtel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "airtel@2x.png"; sourceTree = "<group>"; };
+		CB9930F0186B4A3800AF5790 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
+		CB9930F1186B4A3800AF5790 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		CB9930F2186B4A3800AF5790 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		CB9930F3186B4A3800AF5790 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		CB9930F4186B4A3800AF5790 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		CB9930F5186B4A3800AF5790 /* 0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0@2x.png"; sourceTree = "<group>"; };
+		CB9930F6186B4A3800AF5790 /* 1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1@2x.png"; sourceTree = "<group>"; };
+		CB9930F7186B4A3800AF5790 /* 2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2@2x.png"; sourceTree = "<group>"; };
+		CB9930F8186B4A3800AF5790 /* 3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3@2x.png"; sourceTree = "<group>"; };
+		CB9930F9186B4A3800AF5790 /* 4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4@2x.png"; sourceTree = "<group>"; };
+		CB993104186B4C2800AF5790 /* IconAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IconAnimator.h; path = core/IconAnimator.h; sourceTree = "<group>"; };
+		CB993105186B4C2800AF5790 /* IconAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IconAnimator.m; path = core/IconAnimator.m; sourceTree = "<group>"; };
+		CB993107186B622700AF5790 /* airtel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "airtel@2x.png"; sourceTree = "<group>"; };
+		CB993109186B624900AF5790 /* airtel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = airtel.png; sourceTree = "<group>"; };
+		CB99310B186B668900AF5790 /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh.png; sourceTree = "<group>"; };
+		CB99310D186B671600AF5790 /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
+		CB99310E186B671600AF5790 /* exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exit.png; sourceTree = "<group>"; };
+		CB993112186B697B00AF5790 /* LaunchAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchAtLoginController.h; sourceTree = "<group>"; };
+		CB993113186B697B00AF5790 /* LaunchAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchAtLoginController.m; sourceTree = "<group>"; };
+		CB993114186B697B00AF5790 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +150,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB17A8CE18675B5200C205D1 /* libxml2.dylib in Frameworks */,
+				CB17A8AD1867561900C205D1 /* CoreServices.framework in Frameworks */,
+				CB17A8AB1867561300C205D1 /* SystemConfiguration.framework in Frameworks */,
+				CB17A8A91867560B00C205D1 /* Security.framework in Frameworks */,
 				CB17A84D1867390600C205D1 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,6 +173,13 @@
 		CB17A8401867390500C205D1 = {
 			isa = PBXGroup;
 			children = (
+				CB993109186B624900AF5790 /* airtel.png */,
+				CB993107186B622700AF5790 /* airtel@2x.png */,
+				CB17A8CD18675B5200C205D1 /* libxml2.dylib */,
+				CB17A8CB18675B4600C205D1 /* libxml2.2.dylib */,
+				CB17A8AC1867561900C205D1 /* CoreServices.framework */,
+				CB17A8AA1867561300C205D1 /* SystemConfiguration.framework */,
+				CB17A8A81867560B00C205D1 /* Security.framework */,
 				CB17A8521867390600C205D1 /* Airtel Usage Monitor */,
 				CB17A86F1867390600C205D1 /* Airtel Usage MonitorTests */,
 				CB17A84B1867390600C205D1 /* Frameworks */,
@@ -114,8 +219,12 @@
 		CB17A8521867390600C205D1 /* Airtel Usage Monitor */ = {
 			isa = PBXGroup;
 			children = (
+				CB9930C9186B344400AF5790 /* images */,
+				CB17A8821867510E00C205D1 /* external */,
 				CB17A85E1867390600C205D1 /* AppDelegate.h */,
 				CB17A85F1867390600C205D1 /* AppDelegate.m */,
+				CB993104186B4C2800AF5790 /* IconAnimator.h */,
+				CB993105186B4C2800AF5790 /* IconAnimator.m */,
 				CB17A8611867390600C205D1 /* MainMenu.xib */,
 				CB17A8531867390600C205D1 /* Supporting Files */,
 			);
@@ -125,6 +234,7 @@
 		CB17A8531867390600C205D1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CB17A88018673FBF00C205D1 /* bandwidth.png */,
 				CB17A8541867390600C205D1 /* Airtel Usage Monitor-Info.plist */,
 				CB17A8551867390600C205D1 /* InfoPlist.strings */,
 				CB17A8581867390600C205D1 /* main.m */,
@@ -151,6 +261,106 @@
 				CB17A8721867390600C205D1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB17A8821867510E00C205D1 /* external */ = {
+			isa = PBXGroup;
+			children = (
+				CB993111186B696300AF5790 /* startup */,
+				CB17A88A186755D800C205D1 /* networking */,
+				CB17A8831867511400C205D1 /* parser */,
+			);
+			name = external;
+			sourceTree = "<group>";
+		};
+		CB17A8831867511400C205D1 /* parser */ = {
+			isa = PBXGroup;
+			children = (
+				CB17A8841867513400C205D1 /* HTMLNode.h */,
+				CB17A8851867513400C205D1 /* HTMLNode.m */,
+				CB17A8861867513400C205D1 /* HTMLParser.h */,
+				CB17A8871867513400C205D1 /* HTMLParser.m */,
+			);
+			name = parser;
+			path = external/parser;
+			sourceTree = "<group>";
+		};
+		CB17A88A186755D800C205D1 /* networking */ = {
+			isa = PBXGroup;
+			children = (
+				CB17A8D11867625F00C205D1 /* Reachability */,
+				CB17A8AE1867588900C205D1 /* AFNetworking */,
+			);
+			name = networking;
+			path = external/networking;
+			sourceTree = "<group>";
+		};
+		CB17A8AE1867588900C205D1 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				CB17A8AF1867588900C205D1 /* AFHTTPClient.h */,
+				CB17A8B01867588900C205D1 /* AFHTTPClient.m */,
+				CB17A8B11867588900C205D1 /* AFHTTPRequestOperation.h */,
+				CB17A8B21867588900C205D1 /* AFHTTPRequestOperation.m */,
+				CB17A8B31867588900C205D1 /* AFImageRequestOperation.h */,
+				CB17A8B41867588900C205D1 /* AFImageRequestOperation.m */,
+				CB17A8B51867588900C205D1 /* AFJSONRequestOperation.h */,
+				CB17A8B61867588900C205D1 /* AFJSONRequestOperation.m */,
+				CB17A8B71867588900C205D1 /* AFNetworkActivityIndicatorManager.h */,
+				CB17A8B81867588900C205D1 /* AFNetworkActivityIndicatorManager.m */,
+				CB17A8B91867588900C205D1 /* AFNetworking.h */,
+				CB17A8BA1867588900C205D1 /* AFPropertyListRequestOperation.h */,
+				CB17A8BB1867588900C205D1 /* AFPropertyListRequestOperation.m */,
+				CB17A8BC1867588900C205D1 /* AFURLConnectionOperation.h */,
+				CB17A8BD1867588900C205D1 /* AFURLConnectionOperation.m */,
+				CB17A8BE1867588900C205D1 /* AFXMLRequestOperation.h */,
+				CB17A8BF1867588900C205D1 /* AFXMLRequestOperation.m */,
+				CB17A8C01867588900C205D1 /* UIImageView+AFNetworking.h */,
+				CB17A8C11867588900C205D1 /* UIImageView+AFNetworking.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		CB17A8D11867625F00C205D1 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				CB17A8D21867626D00C205D1 /* Reachability.h */,
+				CB17A8D31867626D00C205D1 /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		CB9930C9186B344400AF5790 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				CB9930F0186B4A3800AF5790 /* 0.png */,
+				CB99310B186B668900AF5790 /* refresh.png */,
+				CB99310D186B671600AF5790 /* about.png */,
+				CB99310E186B671600AF5790 /* exit.png */,
+				CB9930F1186B4A3800AF5790 /* 1.png */,
+				CB9930F2186B4A3800AF5790 /* 2.png */,
+				CB9930F3186B4A3800AF5790 /* 3.png */,
+				CB9930F4186B4A3800AF5790 /* 4.png */,
+				CB9930F5186B4A3800AF5790 /* 0@2x.png */,
+				CB9930F6186B4A3800AF5790 /* 1@2x.png */,
+				CB9930F7186B4A3800AF5790 /* 2@2x.png */,
+				CB9930F8186B4A3800AF5790 /* 3@2x.png */,
+				CB9930F9186B4A3800AF5790 /* 4@2x.png */,
+				CB9930CE186B385200AF5790 /* airtel.png */,
+				CB9930CF186B385200AF5790 /* airtel@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		CB993111186B696300AF5790 /* startup */ = {
+			isa = PBXGroup;
+			children = (
+				CB993112186B697B00AF5790 /* LaunchAtLoginController.h */,
+				CB993113186B697B00AF5790 /* LaunchAtLoginController.m */,
+				CB993114186B697B00AF5790 /* README.md */,
+			);
+			name = startup;
+			path = external/startup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +437,24 @@
 				CB17A8571867390600C205D1 /* InfoPlist.strings in Resources */,
 				CB17A85D1867390600C205D1 /* Credits.rtf in Resources */,
 				CB17A8631867390600C205D1 /* MainMenu.xib in Resources */,
+				CB17A88118673FBF00C205D1 /* bandwidth.png in Resources */,
+				CB9930D0186B385200AF5790 /* airtel.png in Resources */,
+				CB9930D1186B385200AF5790 /* airtel@2x.png in Resources */,
+				CB9930FA186B4A3800AF5790 /* 0.png in Resources */,
+				CB9930FB186B4A3800AF5790 /* 1.png in Resources */,
+				CB9930FC186B4A3800AF5790 /* 2.png in Resources */,
+				CB9930FD186B4A3800AF5790 /* 3.png in Resources */,
+				CB9930FE186B4A3800AF5790 /* 4.png in Resources */,
+				CB9930FF186B4A3800AF5790 /* 0@2x.png in Resources */,
+				CB993100186B4A3800AF5790 /* 1@2x.png in Resources */,
+				CB993101186B4A3800AF5790 /* 2@2x.png in Resources */,
+				CB993102186B4A3800AF5790 /* 3@2x.png in Resources */,
+				CB993103186B4A3800AF5790 /* 4@2x.png in Resources */,
+				CB993108186B622700AF5790 /* airtel@2x.png in Resources */,
+				CB99310A186B624900AF5790 /* airtel.png in Resources */,
+				CB99310C186B668900AF5790 /* refresh.png in Resources */,
+				CB99310F186B671700AF5790 /* about.png in Resources */,
+				CB993110186B671700AF5790 /* exit.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +463,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB17A8741867390600C205D1 /* InfoPlist.strings in Resources */,
+				CB993116186B697B00AF5790 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +492,20 @@
 			files = (
 				CB17A8591867390600C205D1 /* main.m in Sources */,
 				CB17A8601867390600C205D1 /* AppDelegate.m in Sources */,
+				CB17A8C21867588900C205D1 /* AFHTTPClient.m in Sources */,
+				CB17A8C31867588900C205D1 /* AFHTTPRequestOperation.m in Sources */,
+				CB17A8C41867588900C205D1 /* AFImageRequestOperation.m in Sources */,
+				CB17A8C51867588900C205D1 /* AFJSONRequestOperation.m in Sources */,
+				CB17A8C61867588900C205D1 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				CB17A8C71867588900C205D1 /* AFPropertyListRequestOperation.m in Sources */,
+				CB17A8C81867588900C205D1 /* AFURLConnectionOperation.m in Sources */,
+				CB17A8C91867588900C205D1 /* AFXMLRequestOperation.m in Sources */,
+				CB17A8CA1867588900C205D1 /* UIImageView+AFNetworking.m in Sources */,
+				CB17A8CF18675C3700C205D1 /* HTMLParser.m in Sources */,
+				CB17A8D018675C3900C205D1 /* HTMLNode.m in Sources */,
+				CB17A8D41867626D00C205D1 /* Reachability.m in Sources */,
+				CB993106186B4C2800AF5790 /* IconAnimator.m in Sources */,
+				CB993117186B697F00AF5790 /* LaunchAtLoginController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +514,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB17A8771867390600C205D1 /* Airtel_Usage_MonitorTests.m in Sources */,
+				CB17A8881867513400C205D1 /* HTMLNode.m in Sources */,
+				CB17A8891867513400C205D1 /* HTMLParser.m in Sources */,
+				CB17A8D51867626D00C205D1 /* Reachability.m in Sources */,
+				CB993115186B697B00AF5790 /* LaunchAtLoginController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,7 +632,9 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Airtel Usage Monitor/Airtel Usage Monitor-Prefix.pch";
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 				INFOPLIST_FILE = "Airtel Usage Monitor/Airtel Usage Monitor-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -397,7 +646,9 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Airtel Usage Monitor/Airtel Usage Monitor-Prefix.pch";
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 				INFOPLIST_FILE = "Airtel Usage Monitor/Airtel Usage Monitor-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -452,6 +703,7 @@
 				CB17A87C1867390600C205D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB17A87D1867390600C205D1 /* Build configuration list for PBXNativeTarget "Airtel Usage MonitorTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +712,7 @@
 				CB17A87F1867390600C205D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
