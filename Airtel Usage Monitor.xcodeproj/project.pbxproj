@@ -13,13 +13,7 @@
 		CB17A85D1867390600C205D1 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CB17A85B1867390600C205D1 /* Credits.rtf */; };
 		CB17A8601867390600C205D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB17A85F1867390600C205D1 /* AppDelegate.m */; };
 		CB17A8631867390600C205D1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB17A8611867390600C205D1 /* MainMenu.xib */; };
-		CB17A86B1867390600C205D1 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB17A86A1867390600C205D1 /* SenTestingKit.framework */; };
-		CB17A86C1867390600C205D1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB17A84C1867390600C205D1 /* Cocoa.framework */; };
-		CB17A8741867390600C205D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB17A8721867390600C205D1 /* InfoPlist.strings */; };
-		CB17A8771867390600C205D1 /* Airtel_Usage_MonitorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB17A8761867390600C205D1 /* Airtel_Usage_MonitorTests.m */; };
 		CB17A88118673FBF00C205D1 /* bandwidth.png in Resources */ = {isa = PBXBuildFile; fileRef = CB17A88018673FBF00C205D1 /* bandwidth.png */; };
-		CB17A8881867513400C205D1 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CB17A8851867513400C205D1 /* HTMLNode.m */; };
-		CB17A8891867513400C205D1 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CB17A8871867513400C205D1 /* HTMLParser.m */; };
 		CB17A8A91867560B00C205D1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB17A8A81867560B00C205D1 /* Security.framework */; };
 		CB17A8AB1867561300C205D1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB17A8AA1867561300C205D1 /* SystemConfiguration.framework */; };
 		CB17A8AD1867561900C205D1 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB17A8AC1867561900C205D1 /* CoreServices.framework */; };
@@ -32,11 +26,10 @@
 		CB17A8C81867588900C205D1 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CB17A8BD1867588900C205D1 /* AFURLConnectionOperation.m */; };
 		CB17A8C91867588900C205D1 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CB17A8BF1867588900C205D1 /* AFXMLRequestOperation.m */; };
 		CB17A8CA1867588900C205D1 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = CB17A8C11867588900C205D1 /* UIImageView+AFNetworking.m */; };
-		CB17A8CE18675B5200C205D1 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CB17A8CD18675B5200C205D1 /* libxml2.dylib */; };
 		CB17A8CF18675C3700C205D1 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CB17A8871867513400C205D1 /* HTMLParser.m */; };
 		CB17A8D018675C3900C205D1 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CB17A8851867513400C205D1 /* HTMLNode.m */; };
 		CB17A8D41867626D00C205D1 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CB17A8D31867626D00C205D1 /* Reachability.m */; };
-		CB17A8D51867626D00C205D1 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CB17A8D31867626D00C205D1 /* Reachability.m */; };
+		CB62E4481D7FFFA400B941F8 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CB62E4471D7FFFA400B941F8 /* libxml2.2.dylib */; };
 		CB9930D0186B385200AF5790 /* airtel.png in Resources */ = {isa = PBXBuildFile; fileRef = CB9930CE186B385200AF5790 /* airtel.png */; };
 		CB9930D1186B385200AF5790 /* airtel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB9930CF186B385200AF5790 /* airtel@2x.png */; };
 		CB9930FA186B4A3800AF5790 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = CB9930F0186B4A3800AF5790 /* 0.png */; };
@@ -55,20 +48,8 @@
 		CB99310C186B668900AF5790 /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = CB99310B186B668900AF5790 /* refresh.png */; };
 		CB99310F186B671700AF5790 /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = CB99310D186B671600AF5790 /* about.png */; };
 		CB993110186B671700AF5790 /* exit.png in Resources */ = {isa = PBXBuildFile; fileRef = CB99310E186B671600AF5790 /* exit.png */; };
-		CB993115186B697B00AF5790 /* LaunchAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB993113186B697B00AF5790 /* LaunchAtLoginController.m */; };
-		CB993116186B697B00AF5790 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CB993114186B697B00AF5790 /* README.md */; };
 		CB993117186B697F00AF5790 /* LaunchAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB993113186B697B00AF5790 /* LaunchAtLoginController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		CB17A86D1867390600C205D1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CB17A8411867390500C205D1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CB17A8481867390600C205D1;
-			remoteInfo = "Airtel Usage Monitor";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CB17A8491867390600C205D1 /* Airtel Usage Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Airtel Usage Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,12 +65,7 @@
 		CB17A85E1867390600C205D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CB17A85F1867390600C205D1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CB17A8621867390600C205D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		CB17A8691867390600C205D1 /* Airtel Usage MonitorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Airtel Usage MonitorTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB17A86A1867390600C205D1 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		CB17A8711867390600C205D1 /* Airtel Usage MonitorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Airtel Usage MonitorTests-Info.plist"; sourceTree = "<group>"; };
-		CB17A8731867390600C205D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CB17A8751867390600C205D1 /* Airtel_Usage_MonitorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Airtel_Usage_MonitorTests.h; sourceTree = "<group>"; };
-		CB17A8761867390600C205D1 /* Airtel_Usage_MonitorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Airtel_Usage_MonitorTests.m; sourceTree = "<group>"; };
 		CB17A88018673FBF00C205D1 /* bandwidth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bandwidth.png; sourceTree = "<group>"; };
 		CB17A8841867513400C205D1 /* HTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLNode.h; sourceTree = "<group>"; };
 		CB17A8851867513400C205D1 /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLNode.m; sourceTree = "<group>"; };
@@ -117,10 +93,11 @@
 		CB17A8BF1867588900C205D1 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
 		CB17A8C01867588900C205D1 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		CB17A8C11867588900C205D1 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
-		CB17A8CB18675B4600C205D1 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
-		CB17A8CD18675B5200C205D1 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		CB17A8D21867626D00C205D1 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		CB17A8D31867626D00C205D1 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		CB62E4431D7FFEF900B941F8 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		CB62E4441D7FFEF900B941F8 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		CB62E4471D7FFFA400B941F8 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = ../../../../usr/lib/libxml2.2.dylib; sourceTree = "<group>"; };
 		CB9930CE186B385200AF5790 /* airtel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = airtel.png; sourceTree = "<group>"; };
 		CB9930CF186B385200AF5790 /* airtel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "airtel@2x.png"; sourceTree = "<group>"; };
 		CB9930F0186B4A3800AF5790 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
@@ -150,20 +127,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB17A8CE18675B5200C205D1 /* libxml2.dylib in Frameworks */,
+				CB62E4481D7FFFA400B941F8 /* libxml2.2.dylib in Frameworks */,
 				CB17A8AD1867561900C205D1 /* CoreServices.framework in Frameworks */,
 				CB17A8AB1867561300C205D1 /* SystemConfiguration.framework in Frameworks */,
 				CB17A8A91867560B00C205D1 /* Security.framework in Frameworks */,
 				CB17A84D1867390600C205D1 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CB17A8651867390600C205D1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CB17A86B1867390600C205D1 /* SenTestingKit.framework in Frameworks */,
-				CB17A86C1867390600C205D1 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,13 +143,10 @@
 			children = (
 				CB993109186B624900AF5790 /* airtel.png */,
 				CB993107186B622700AF5790 /* airtel@2x.png */,
-				CB17A8CD18675B5200C205D1 /* libxml2.dylib */,
-				CB17A8CB18675B4600C205D1 /* libxml2.2.dylib */,
 				CB17A8AC1867561900C205D1 /* CoreServices.framework */,
 				CB17A8AA1867561300C205D1 /* SystemConfiguration.framework */,
 				CB17A8A81867560B00C205D1 /* Security.framework */,
 				CB17A8521867390600C205D1 /* Airtel Usage Monitor */,
-				CB17A86F1867390600C205D1 /* Airtel Usage MonitorTests */,
 				CB17A84B1867390600C205D1 /* Frameworks */,
 				CB17A84A1867390600C205D1 /* Products */,
 			);
@@ -191,7 +156,6 @@
 			isa = PBXGroup;
 			children = (
 				CB17A8491867390600C205D1 /* Airtel Usage Monitor.app */,
-				CB17A8691867390600C205D1 /* Airtel Usage MonitorTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -199,6 +163,9 @@
 		CB17A84B1867390600C205D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CB62E4471D7FFFA400B941F8 /* libxml2.2.dylib */,
+				CB62E4431D7FFEF900B941F8 /* libxml2.2.tbd */,
+				CB62E4441D7FFEF900B941F8 /* libxml2.tbd */,
 				CB17A84C1867390600C205D1 /* Cocoa.framework */,
 				CB17A86A1867390600C205D1 /* SenTestingKit.framework */,
 				CB17A84E1867390600C205D1 /* Other Frameworks */,
@@ -240,25 +207,6 @@
 				CB17A8581867390600C205D1 /* main.m */,
 				CB17A85A1867390600C205D1 /* Airtel Usage Monitor-Prefix.pch */,
 				CB17A85B1867390600C205D1 /* Credits.rtf */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CB17A86F1867390600C205D1 /* Airtel Usage MonitorTests */ = {
-			isa = PBXGroup;
-			children = (
-				CB17A8751867390600C205D1 /* Airtel_Usage_MonitorTests.h */,
-				CB17A8761867390600C205D1 /* Airtel_Usage_MonitorTests.m */,
-				CB17A8701867390600C205D1 /* Supporting Files */,
-			);
-			path = "Airtel Usage MonitorTests";
-			sourceTree = "<group>";
-		};
-		CB17A8701867390600C205D1 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CB17A8711867390600C205D1 /* Airtel Usage MonitorTests-Info.plist */,
-				CB17A8721867390600C205D1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -383,31 +331,13 @@
 			productReference = CB17A8491867390600C205D1 /* Airtel Usage Monitor.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CB17A8681867390600C205D1 /* Airtel Usage MonitorTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CB17A87D1867390600C205D1 /* Build configuration list for PBXNativeTarget "Airtel Usage MonitorTests" */;
-			buildPhases = (
-				CB17A8641867390600C205D1 /* Sources */,
-				CB17A8651867390600C205D1 /* Frameworks */,
-				CB17A8661867390600C205D1 /* Resources */,
-				CB17A8671867390600C205D1 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CB17A86E1867390600C205D1 /* PBXTargetDependency */,
-			);
-			name = "Airtel Usage MonitorTests";
-			productName = "Airtel Usage MonitorTests";
-			productReference = CB17A8691867390600C205D1 /* Airtel Usage MonitorTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		CB17A8411867390500C205D1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastTestingUpgradeCheck = 0730;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Kiran Kumar";
 			};
@@ -424,7 +354,6 @@
 			projectRoot = "";
 			targets = (
 				CB17A8481867390600C205D1 /* Airtel Usage Monitor */,
-				CB17A8681867390600C205D1 /* Airtel Usage MonitorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -458,32 +387,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB17A8661867390600C205D1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CB17A8741867390600C205D1 /* InfoPlist.strings in Resources */,
-				CB993116186B697B00AF5790 /* README.md in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		CB17A8671867390600C205D1 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CB17A8451867390600C205D1 /* Sources */ = {
@@ -509,27 +413,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB17A8641867390600C205D1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CB17A8771867390600C205D1 /* Airtel_Usage_MonitorTests.m in Sources */,
-				CB17A8881867513400C205D1 /* HTMLNode.m in Sources */,
-				CB17A8891867513400C205D1 /* HTMLParser.m in Sources */,
-				CB17A8D51867626D00C205D1 /* Reachability.m in Sources */,
-				CB993115186B697B00AF5790 /* LaunchAtLoginController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CB17A86E1867390600C205D1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CB17A8481867390600C205D1 /* Airtel Usage Monitor */;
-			targetProxy = CB17A86D1867390600C205D1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CB17A8551867390600C205D1 /* InfoPlist.strings */ = {
@@ -554,14 +438,6 @@
 				CB17A8621867390600C205D1 /* en */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		CB17A8721867390600C205D1 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CB17A8731867390600C205D1 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -594,6 +470,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = " ${SDKROOT}/usr/include/libxml2";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -621,6 +498,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = " ${SDKROOT}/usr/include/libxml2";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
 			};
@@ -629,10 +507,15 @@
 		CB17A87B1867390600C205D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Airtel Usage Monitor/Airtel Usage Monitor-Prefix.pch";
-				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				HEADER_SEARCH_PATHS = (
+					"/usr/include/libxml2/**",
+					"$(SDKROOT)/usr/include/libxml2/**",
+					"${SDK_DIR}/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = "Airtel Usage Monitor/Airtel Usage Monitor-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -643,44 +526,19 @@
 		CB17A87C1867390600C205D1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Airtel Usage Monitor/Airtel Usage Monitor-Prefix.pch";
-				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				HEADER_SEARCH_PATHS = (
+					"/usr/include/libxml2/**",
+					"$(SDKROOT)/usr/include/libxml2/**",
+					"${SDK_DIR}/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = "Airtel Usage Monitor/Airtel Usage Monitor-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		CB17A87E1867390600C205D1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Airtel Usage Monitor.app/Contents/MacOS/Airtel Usage Monitor";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Airtel Usage Monitor/Airtel Usage Monitor-Prefix.pch";
-				INFOPLIST_FILE = "Airtel Usage MonitorTests/Airtel Usage MonitorTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		CB17A87F1867390600C205D1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Airtel Usage Monitor.app/Contents/MacOS/Airtel Usage Monitor";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Airtel Usage Monitor/Airtel Usage Monitor-Prefix.pch";
-				INFOPLIST_FILE = "Airtel Usage MonitorTests/Airtel Usage MonitorTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -701,15 +559,6 @@
 			buildConfigurations = (
 				CB17A87B1867390600C205D1 /* Debug */,
 				CB17A87C1867390600C205D1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CB17A87D1867390600C205D1 /* Build configuration list for PBXNativeTarget "Airtel Usage MonitorTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CB17A87E1867390600C205D1 /* Debug */,
-				CB17A87F1867390600C205D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
